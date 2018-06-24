@@ -5,7 +5,7 @@ const app = express();
 
 /**
 *Database
-*/
+**/
 dbConfig();
 
 const PORT = process.env.PORT || 3000;
