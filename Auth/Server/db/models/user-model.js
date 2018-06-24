@@ -36,8 +36,8 @@ User.pre('save', function(next){
         return next();
     }
     bcrypt.genSalt(12,(err,salt) => {
-if (err) {
-    return Promise.reject(err);
+        if (err) {
+        return Promise.reject(err);
     }   
 
     bcrypt.hash(user.password,salt,(err,hashedPassword) => {

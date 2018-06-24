@@ -3,6 +3,9 @@ const express = require('express');
 const app = express();
 const mongoose = require('./db/mongoose');
 const userRoutes = require('./routes/user-routes');
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
 // const bcrypt = require('bcrypt');
 
 // let pw = "myPW";
@@ -16,6 +19,7 @@ const userRoutes = require('./routes/user-routes');
 // const userRoutes = require('./routes/user_roues');
 // const bodyParser = require('body-parser');
 // app.user(body)
+
 
 
 
