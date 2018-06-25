@@ -13,6 +13,6 @@ let token = jwt.sign(payload,secret, {
 
 // console.log('my token is',token);
 
-let decoded = jwt.verify(token, 'bad');
+let decoded = jwt.verify(token, secret);
 
 console.log(decoded);
